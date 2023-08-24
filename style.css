@@ -1,0 +1,148 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: 0.3;
+  position: fixed;
+  width: 100%;
+}
+
+.links ul :hover {
+  background-color: rgb(218, 57, 57);
+  color: white;
+  border-radius: 100%;
+  padding: 10px;
+  transition: all 500ms;
+}
+.action-button {
+  background-color: rgb(218, 57, 57);
+  color: white;
+  padding: 10px;
+  margin-right: 25px;border-radius: 30px;
+
+}
+
+.links ul {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  list-style: none;
+}
+
+.head .svg {
+  width: 50px;
+  height: 50px;
+  padding: 30px;
+
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(208, 202, 216);
+  margin: 0;
+}
+
+.main {
+  height: 100vh;
+  background-color: rgb(208, 202, 216);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+  gap: 10px;
+}
+
+.section {
+  height: 100vh;
+  background-color: rgb(214, 214, 224);
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.my-services {
+  height: 100%;
+  padding-bottom: 10%;
+  background-color: rgb(197, 187, 219);
+}
+
+.my-services h1 {
+  font-size: xx-large;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  text-decoration: underline;
+}
+#cards {
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  border: 5px;
+  border-radius: 5px;
+  background-color: rgb(217, 213, 226);
+  color: black;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  object-fit: contain;
+  width: 20%;
+  height: 20%;
+}
+.card h3 {
+  text-align: center;
+  font-size: large;
+  font-weight: 400px;
+}
+.card p {
+  text-align: center;
+  font-size: medium;
+}
+.card .svg {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border: solid black 2px;
+  border-radius: 100%;
+  background-color: rgb(197, 187, 219);
+}
+
+.card:hover {
+  background-color: rgb(218, 57, 57);
+  transition: all 500ms;
+}
+
+
+
+ /* small - tablet screen */
+ @media (max-width: 768px) {
+  .links ul {
+    display: none;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+  .section{
+    display: flex;
+    flex-direction: column;
+  }
+}
+ /* tablet screen */
+/* @media (max-width: 768px) {
+} */
+
+
+/* desktop screen */
+@media (min-width: 1024px) {
+ .head .svg{
+  display: none;
+ }
+}
